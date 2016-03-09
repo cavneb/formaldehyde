@@ -22,6 +22,7 @@ export default class Form extends React.Component {
     formModel: React.PropTypes.object,
     getFormModelValue: React.PropTypes.func,
     getFormStatus: React.PropTypes.func,
+    gatherInputValues: React.PropTypes.func,
     registerFormControl: React.PropTypes.func,
     unregisterFormControl: React.PropTypes.func,
   };
@@ -41,6 +42,7 @@ export default class Form extends React.Component {
       formModel: this.props.model,
       getFormModelValue: this.getFormModelValue,
       getFormStatus: this.getFormStatus,
+      gatherInputValues: this.gatherInputValues,
       registerFormControl: this.onControlRegistration,
       unregisterFormControl: this.onControlUnregistration,
     };
